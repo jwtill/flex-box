@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.flex-container {
+  /* flex-flow:wrap; */
+  /* width: 48%; */
+  display: flex;
+  background-color: DodgerBlue;
+  flex-grow: initial;
+}
+
+.flex-child > div {
+  /* flex:1; */
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  flex-direction:row-reverse;
+}
+
+.flex-child:flex-child > div {
+background-color: #f1f1f1;
+margin-right: 20px;
+margin: 10px;
+padding: 20px;
+font-size: 30px;
+}
+
+/* 
+.three { 
+  flex-shrink: 5;
+
+} */
+</style>
+</head>
+<body>
+
+<h1>Create a Flex Container</h1>
+
+<div class="flex-container">
+
+<div class="flex-child">
+  <div>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu nunc sit amet ex iaculis rhoncus. Phasellus id tortor mollis, tempus justo vitae, ornare neque. Aliquam eget sollicitudin metus, vel lobortis nisi. ue.</div>
+  <div>2. In ultricies metus et est facilisis consectetur. Nullam mollis, nunc ac tempus porttitor, lectus lorem pharetra dolor, id scelerisque purus diam nec magna. Nullam vestibulum ipsum sed ipsum tempus convallis. Morbi orci nisi, consequat sed leo eget, lobortis maximus neque. Morbi laoreet ex a lacus viverra, vitae condimentum orci cong</div>
+  <div class="three">3. In ultricies metus et est facilisis consectetur. Nullam mollis, nunc ac tempus porttitor, lectus lorem pharetra dolor, id scelerisque purus diam nec magna. Nullam vestibulum ipsum sed ipsum tempus convallis. Morbi orci nisi, consequat sed leo eget, lobortis maximus neque. Morbi laoreet ex a lacus viverra, vitae condimentum orci cong</div>  
+</div>
+
+<div class="flex-child">
+  <div>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu nunc sit amet ex iaculis rhoncus. Phasellus id tortor mollis, tempus justo vitae, ornare neque. Aliquam eget sollicitudin metus, vel lobortis nisi. ue.</div>
+  <div>2. In ultricies metus et est facilisis consectetur. Nullam mollis, nunc ac tempus porttitor, lectus lorem pharetra dolor, id scelerisque purus diam nec magna. Nullam vestibulum ipsum sed ipsum tempus convallis. Morbi orci nisi, consequat sed leo eget, lobortis maximus neque. Morbi laoreet ex a lacus viverra, vitae condimentum orci cong</div>
+  <div class="three">3. In ultricies metus et est facilisis consectetur. Nullam mollis, nunc ac tempus porttitor, lectus lorem pharetra dolor, id scelerisque purus diam nec magna. Nullam vestibulum ipsum sed ipsum tempus convallis. Morbi orci nisi, consequat sed leo eget, lobortis maximus neque. Morbi laoreet ex a lacus viverra, vitae condimentum orci cong</div>  
+</div>
+
+</div>
+
+<p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+
+<p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+
+</body>
+</html>
